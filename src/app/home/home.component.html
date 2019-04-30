@@ -1,0 +1,26 @@
+<GridLayout class="page" rows="*,*,*,*,*,*,*" backgroundColor="lightgray" [formGroup]="createPSForm"]>
+  <Label text="Opret betalingsservice" row="0" fontSize="30"></Label>
+  <StackLayout row="1" orientation="vertical" class="field-group">
+    <Label text="PBS-nummer"></Label>
+    <TextField hint="Indtast debitorgruppe" backgroundColor="white" formControlName="psFormPBSNummer"></TextField>
+  </StackLayout>
+  <StackLayout row="2" orientation="vertical" class="field-group">
+    <Label text="Debitorgruppe"></Label>
+    <TextField hint="Indtast debitorgruppe" backgroundColor="white" formControlName="psFormDebitorGruppe"></TextField>
+  </StackLayout>
+  <StackLayout row="3" orientation="vertical" class="field-group">
+    <Label text="Kundenummer"></Label>
+    <TextField hint="Indtast Kundenummer" backgroundColor="white" formControlName="psFormKundenummer"></TextField>
+  </StackLayout>
+  <StackLayout row="4" orientation="vertical" class="field-group">
+    <Label text="Beskrivelse"></Label>
+    <TextField hint="Indtast beskrivelse" backgroundColor="white" formControlName="psFormBeskrivesle"></TextField>
+  </StackLayout>
+  <StackLayout row="5" orientation="vertical" class="field-group">
+    <Label text="Fra konto"></Label>
+    <TextField hint="Indtast Fra-konto" backgroundColor="white" formControlName="psFormFraKonto"></TextField>
+  </StackLayout>
+  <StackLayout row="6" orientation="horizontal">
+      <Button (tap)="onSubmit()" text="submit" class="btn btn-primary"></Button>
+  </StackLayout>
+</GridLayout>
